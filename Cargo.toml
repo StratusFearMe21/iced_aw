@@ -64,6 +64,11 @@ lazy_static = { version = "1.4.0", optional = true }
 #rev = "8221794"
 version = "0.8.0"
 
+[target.'cfg(target_arch = "wasm32")'.dependencies.iced_web]
+#git = "https://github.com/iced-rs/iced.git"
+#rev = "8221794"
+version = "0.4.0"
+
 [target.'cfg(not(target_arch = "wasm32"))'.dependencies.iced_graphics]
 #git = "https://github.com/iced-rs/iced.git"
 #rev = "8221794"
